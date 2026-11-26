@@ -1,0 +1,8 @@
+# Fusion control: fusion every 100 local steps and at epoch ends.
+defaults:
+  - base
+  - _self_
+
+clusters: label_aware
+num_clusters: 8
+fusion: 100

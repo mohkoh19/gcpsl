@@ -1,0 +1,6 @@
+# GCPSL with label-aware clusters.
+defaults:
+  - base
+  - _self_
+
+method: gcpsl_label_aware

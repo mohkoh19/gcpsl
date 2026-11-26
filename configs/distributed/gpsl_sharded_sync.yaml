@@ -1,0 +1,6 @@
+# One GPSL batch of 64 sharded over four GPUs.
+defaults:
+  - base
+  - _self_
+
+method: gpsl_sharded_sync

@@ -1,0 +1,8 @@
+# Fusion control: the clusters run one after another.
+defaults:
+  - base
+  - _self_
+
+clusters: label_aware
+num_clusters: 8
+sequential: true

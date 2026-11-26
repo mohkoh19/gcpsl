@@ -1,0 +1,6 @@
+# Four GPSL workloads whose clients are reassigned at every fusion.
+defaults:
+  - base
+  - _self_
+
+method: gpsl_repartitioned

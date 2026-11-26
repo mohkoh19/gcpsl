@@ -1,0 +1,43 @@
+# Shared settings of the real-execution study.
+world_size: 4
+device: auto
+
+method: ???
+sequential: false
+seed: 40
+epochs: 100
+
+dataset: cifar10
+data_dir: data
+download: false
+num_clients: 256
+classes_per_client: 2
+dirichlet_alpha: 3.0
+validation_size: 5000
+batch_size: 64            # per workload
+
+learning_rate: 0.01
+momentum: 0.9
+weight_decay: 0.0005
+nesterov: true
+label_smoothing: 0.1
+
+eval_batch_size: 256
+targets: [0.80, 0.85, 0.88]
+num_workers: 4
+strict_determinism: true
+warmup: true
+output_dir: outputs/distributed/${hydra:job.config_name}/seed${seed}
+save_checkpoints: false
+
+# Keep Hydra quiet and identical on all ranks; results go to output_dir.
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+  job:
+    chdir: false
+defaults:
+  - override hydra/job_logging: disabled
+  - override hydra/hydra_logging: disabled
+  - _self_

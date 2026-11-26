@@ -1,0 +1,6 @@
+# GCPSL with size-balanced clusters.
+defaults:
+  - base
+  - _self_
+
+method: gcpsl_size_balanced

@@ -1,0 +1,7 @@
+# Original GPSL on one GPU.
+defaults:
+  - base
+  - _self_
+
+method: gpsl_single_worker
+world_size: 1

@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+title: "GCPSL: Global Clustered Parallel Split Learning"
+message: "If you use this software, please cite the preprint below."
+type: software
+authors:
+  - family-names: Kohankhaki
+    given-names: Mohammad
+  - family-names: Rentschler
+    given-names: Valentin
+  - family-names: Kamp
+    given-names: Carsten
+  - family-names: Brell-Cokcan
+    given-names: Sigrid
+  - family-names: Schmeink
+    given-names: Anke
+repository-code: "https://github.com/mohkoh19/gcpsl"
+license: CC-BY-NC-4.0
+version: 0.1.0
+preferred-citation:
+  type: generic
+  title: "Reducing Fixed-Batch Client Idleness in Many-Client Edge Split Learning"
+  authors:
+    - family-names: Kohankhaki
+      given-names: Mohammad
+    - family-names: Rentschler
+      given-names: Valentin
+    - family-names: Kamp
+      given-names: Carsten
+    - family-names: Brell-Cokcan
+      given-names: Sigrid
+    - family-names: Schmeink
+      given-names: Anke
+  year: 2026
+  url: "https://arxiv.org/abs/2609.29395"

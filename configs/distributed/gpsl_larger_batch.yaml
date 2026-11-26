@@ -1,0 +1,9 @@
+# GPSL with a four times larger batch on one GPU.
+defaults:
+  - base
+  - _self_
+
+method: gpsl_larger_batch
+world_size: 1
+batch_size: 256
+learning_rate: 0.02

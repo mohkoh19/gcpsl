@@ -1,0 +1,7 @@
+# Capacity control: GPSL with B=512.
+defaults:
+  - base
+  - _self_
+
+batch_size: 512
+learning_rate: 0.04

@@ -1,0 +1,7 @@
+# The label-aware workloads, executed in turn on the same four GPUs.
+defaults:
+  - base
+  - _self_
+
+method: gcpsl_label_aware
+sequential: true

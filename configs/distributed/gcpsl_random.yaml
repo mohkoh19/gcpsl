@@ -1,0 +1,6 @@
+# GCPSL with random clusters.
+defaults:
+  - base
+  - _self_
+
+method: gcpsl_random

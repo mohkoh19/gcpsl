@@ -1,0 +1,39 @@
+# Shared settings of the schedule-accounted studies.
+clusters: null            # random | size_balanced | label_aware, or null for GPSL
+num_clusters: 1
+fusion: epoch             # epoch | none | number of local steps
+sequential: false
+seed: 40
+epochs: 100
+
+dataset: cifar10
+data_dir: data
+download: false
+num_clients: 256
+classes_per_client: 2
+dirichlet_alpha: 3.0
+batch_size: 64
+
+learning_rate: 0.01
+momentum: 0.9
+weight_decay: 0.0005
+nesterov: true
+label_smoothing: 0.1
+targets: [0.85, 0.88]
+
+num_workers: 4
+batch_clients: true       # one client pass per batch instead of one per client
+device: auto
+strict_determinism: true
+output_dir: outputs/schedule_accounted/${hydra:job.config_name}/seed${seed}
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+  job:
+    chdir: false
+defaults:
+  - override hydra/job_logging: disabled
+  - override hydra/hydra_logging: disabled
+  - _self_

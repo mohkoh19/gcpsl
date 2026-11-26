@@ -1,0 +1,10 @@
+# GCPSL on CIFAR-100, label-aware clusters.
+defaults:
+  - base
+  - _self_
+
+dataset: cifar100
+targets: [0.50, 0.60]
+clusters: label_aware
+num_clusters: 4
+batch_size: 128

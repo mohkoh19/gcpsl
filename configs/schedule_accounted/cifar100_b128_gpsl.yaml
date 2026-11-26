@@ -1,0 +1,8 @@
+# GPSL on CIFAR-100.
+defaults:
+  - base
+  - _self_
+
+dataset: cifar100
+targets: [0.50, 0.60]
+batch_size: 128

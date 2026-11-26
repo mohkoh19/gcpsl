@@ -1,0 +1,7 @@
+# GCPSL on CIFAR-10, label-aware clusters, N=8.
+defaults:
+  - base
+  - _self_
+
+clusters: label_aware
+num_clusters: 8

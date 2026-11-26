@@ -1,0 +1,7 @@
+# GCPSL on CIFAR-10, size-balanced clusters, N=2.
+defaults:
+  - base
+  - _self_
+
+clusters: size_balanced
+num_clusters: 2

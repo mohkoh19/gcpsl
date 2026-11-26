@@ -1,0 +1,7 @@
+# One GPSL batch of 256, 64 examples per GPU.
+defaults:
+  - base
+  - _self_
+
+method: gpsl_data_parallel
+learning_rate: 0.02

@@ -1,0 +1,8 @@
+# GCPSL on CIFAR-10 with B=128.
+defaults:
+  - base
+  - _self_
+
+clusters: label_aware
+num_clusters: 4
+batch_size: 128

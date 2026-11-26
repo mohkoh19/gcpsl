@@ -1,0 +1,4 @@
+config,gpu,epochs,seed,peak_gpu_memory_mib
+cifar10_b64_gpsl,NVIDIA RTX A4000,10,40,1080
+cifar10_b64_label_aware_n4,NVIDIA RTX A4000,10,40,1640
+cifar10_b512_gpsl,NVIDIA RTX A4000,10,40,4242
